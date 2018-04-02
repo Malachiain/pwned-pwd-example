@@ -1,4 +1,5 @@
-import {checkStatus,
+import {
+    checkStatus,
     reset, 
     updateHash,
     updatePassword,
@@ -39,6 +40,16 @@ describe('action creators',()=>{
         .toEqual(
             {
                 type: ACTION_TYPE.RESET
+            }
+        )
+    })
+
+    it('creates a check status action',()=>{
+        expect(checkStatus('password'))
+        .toEqual(
+            {
+                type: ACTION_TYPE.CHECK_STATUS,
+                password:'password'
             }
         )
     })

@@ -6,11 +6,15 @@
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-solid": "^5.0.9",
     "@fortawesome/react-fontawesome": "^0.0.18",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "prop-types": "^15.6.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.1",
+    "react-test-renderer": "^16.3.0",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-observable": "^0.18.0",
@@ -23,5 +27,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom":[
+      "**/*.{js,jsx}",
+      "!**/src/index.js",
+      "!**/node_modules/**",
+      "!**/build/**",
+      "!**/vendor/**",
+      "!**/coverage/**",
+      "!**/src/epics/index.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

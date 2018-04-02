@@ -4,7 +4,7 @@ import {reset} from '../../actions'
 import {DivColumn,Button,P, Section, SectionHeading} from '../shared'
 import {bindActionCreators} from 'redux'
 
-function result({status, reset}){
+export function Result({status, reset}){
     return (
         <Section>
          <SectionHeading>The results are in!</SectionHeading>
@@ -28,4 +28,4 @@ function mapDispatch(dipatch){
     }
 }
 
-export default connect(mapState,mapDispatch)(result)
+export default connect(mapState,mapDispatch)(Result)

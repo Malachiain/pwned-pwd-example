@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The main app It renders the main page correctly 1`] = `
+<div>
+  <Component />
+  <Connect(Password) />
+  <Component />
+</div>
+`;

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Footer  It renders the footer correctly 1`] = `
+<styled.div>
+  <styled.div />
+  <styled.div>
+    <styled.div>
+      <styled.p>
+        This website uses a tool built by 
+        <Component
+          content="Troy Hunt"
+          href="https://troyhunt.com"
+        />
+        . It callse the pwned passwords v2 API which references a data set of 500 million passwords that have been disclosed in data breaches. Troy collects the breaches and makes them avalible at 
+        <Component
+          content="have I been pwned"
+          href="https://haveibeenpwned.com/"
+        />
+         Go check out if you have been in a data breach
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.label>
+        Useful resources 
+      </styled.label>
+      <ul>
+        <li>
+          <Component
+            content="https://haveibeenpwned.com/"
+            href="https://haveibeenpwned.com/"
+          />
+        </li>
+        <li>
+          <Component
+            content="https://troyhunt.com"
+            href="https://troyhunt.com"
+          />
+        </li>
+      </ul>
+      <styled.label>
+        Source code of this project 
+      </styled.label>
+      <ul>
+        <li>
+          <Component
+            content="https://github.com/Malachiain"
+            href="https://github.com/Malachiain"
+          />
+        </li>
+      </ul>
+      <styled.p>
+        If you don't like somthing here, feel free to make a PR to changes it.
+      </styled.p>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;

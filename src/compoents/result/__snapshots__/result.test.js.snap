@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The result entry screen It renders the result screen correctly 1`] = `
+<styled.div>
+  <styled.h3>
+    The results are in!
+  </styled.h3>
+  <styled.div>
+    <styled.p>
+      Great
+    </styled.p>
+    <styled.button
+      onClick={[Function]}
+    >
+      Check another password
+    </styled.button>
+  </styled.div>
+</styled.div>
+`;

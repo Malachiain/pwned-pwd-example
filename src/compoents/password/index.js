@@ -6,7 +6,7 @@ import {DivColumn, Content, Button,Input,Label, P,Section} from '../shared'
 
 
 
-function Password({userName, password, updateUserName, updatePassword, hash, status, checkStatus}){
+export function Password({ password, updatePassword, checkStatus}){
     return (
         <Section>
         <Content>
@@ -31,7 +31,6 @@ function Password({userName, password, updateUserName, updatePassword, hash, sta
 function mapState(state){
     return {
         password: state.userReducer.password,
-        hash: state.userReducer.hash,
     }
 }
 
