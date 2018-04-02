@@ -2,17 +2,29 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {updatePassword, checkStatus} from '../../actions'
-import {Div,Button,Input,Label} from '../shared'
+import {DivColumn, Content, Button,Input,Label, P,Section} from '../shared'
 
 
 
-function User({userName, password, updateUserName, updatePassword, hash, status, checkStatus}){
+function Password({userName, password, updateUserName, updatePassword, hash, status, checkStatus}){
     return (
-        <Div>
+        <Section>
+        <Content>
+        
+        <DivColumn>
                 <Label htmlFor="password">Password</Label>
-                <Input  id="password" value={password} onChange={(event)=>{updatePassword(event.target.value)}}/>
+                <Input  type="password" id="password" value={password} onChange={(event)=>{updatePassword(event.target.value)}}/>
                 <Button onClick={()=>checkStatus(password)}>Check password</Button>
-        </Div>
+        </DivColumn>
+        <DivColumn>
+            <P>
+            Enter a password that you want to check. The password will not be recorded. Only the first 5 characters of the sha1 hash
+            of your password will be sent to the API. Trusting people on the internet is a dangerous game, 
+            so it is problably not a good idea to a enter a real password you use.
+            </P>
+        </DivColumn>
+        </Content>
+        </Section>
     )
 }
 
@@ -30,4 +42,4 @@ function mapDispatch(dipatch){
     }
 }
 
-export default connect(mapState,mapDispatch)(User)
+export default connect(mapState,mapDispatch)(Password)

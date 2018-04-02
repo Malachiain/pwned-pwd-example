@@ -3,11 +3,16 @@ import {connect} from 'react-redux'
 import Password from '../password'
 import Result from '../result'
 import {PROGRESSION} from '../../reducers'
+import Header from '../header'
+import Footer from '../footer'
+import Loading from '../loading'
 
 export function App ({progression}){
     return (
       <div >
+        <Header/>
       {progressContent(progression)}
+      <Footer />
       </div>
     )
 }
@@ -17,12 +22,14 @@ function progressContent(progress){
     case PROGRESSION.ENTER:
     return <Password />
     case PROGRESSION.LOADING:
-    return <p>Loading</p>
+    return <Loading />
     case PROGRESSION.RESULT:
     return <Result />
     default:
     return <Password />
   }
+
+
 }
 
 function mapState(state){

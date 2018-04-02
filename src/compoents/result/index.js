@@ -1,15 +1,18 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {reset} from '../../actions'
-import {Div,Button,P} from '../shared'
+import {DivColumn,Button,P, Section, SectionHeading} from '../shared'
 import {bindActionCreators} from 'redux'
 
 function result({status, reset}){
     return (
-        <Div>
+        <Section>
+         <SectionHeading>The results are in!</SectionHeading>
+        <DivColumn>
             <P>{status}</P>
             <Button onClick={()=>{reset()}}>Check another password</Button>
-        </Div>
+        </DivColumn>
+        </Section>
     )
 }
 
