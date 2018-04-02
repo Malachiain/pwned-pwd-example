@@ -43,14 +43,11 @@ exports[`The Footer  It renders the footer correctly 1`] = `
       <ul>
         <li>
           <Component
-            content="https://github.com/Malachiain"
-            href="https://github.com/Malachiain"
+            content="https://github.com/Malachiain/pwned-pwd-example"
+            href="https://github.com/Malachiain/pwned-pwd-example"
           />
         </li>
       </ul>
-      <styled.p>
-        If you don't like somthing here, feel free to make a PR to changes it.
-      </styled.p>
     </styled.div>
   </styled.div>
 </styled.div>
