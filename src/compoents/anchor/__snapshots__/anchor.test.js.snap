@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The anchor It renders the anchor tag correctly 1`] = `
+<styled.a
+  href="test.com"
+  rel="noopener noreferrer"
+  target="_blank"
+/>
+`;

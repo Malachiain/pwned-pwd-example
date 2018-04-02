@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Header  It renders the header correctly 1`] = `
+<styled.div>
+  <styled.h1>
+    Databreach Password Checker
+  </styled.h1>
+</styled.div>
+`;
