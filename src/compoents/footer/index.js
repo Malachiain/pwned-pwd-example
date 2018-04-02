@@ -13,6 +13,7 @@ flex-direction:column;
 `
 const Border = styled.div`
 min-height:30px;
+
 background-color:chartreuse;
 `
 
@@ -35,9 +36,9 @@ export default function(){
                     </ul>
                     <Label >Source code of this project </Label>
                     <ul>
-                        <li><Anchor content="https://github.com/Malachiain" href="https://github.com/Malachiain" /></li>
+                        <li><Anchor content="https://github.com/Malachiain/pwned-pwd-example" href="https://github.com/Malachiain/pwned-pwd-example" /></li>
                     </ul>
-                    <P>If you don't like somthing here, feel free to make a PR to changes it.</P>
+                
    
                 </DivColumn>
             </Content>
