@@ -3,17 +3,24 @@ import styled from 'styled-components'
 export const DivColumn = styled.div`
 display: flex;
 flex-direction: column;
-margin:10px;
-padding: 20px;
-width:30%;
+margin:5px;
+padding: 5px;
+width:80%;
+@media (min-width: 700px) {
+    width:30%;
+    margin:10px;
+    padding: 20px;
+  }
 
 `
 export const Content = styled.div`
 display: flex;
-flex-direction: row;
+flex-direction: column;
 margin:10px;
-margin:auto;
 justify-content:center;
+@media (min-width: 700px) {
+    flex-direction: row;
+  }
 
 `
 
@@ -37,7 +44,7 @@ padding: 10px;
 margin:5px;
 `
 export const Button = styled.button`
-    background-color: limegreen;
+    background-color: chartreuse;
     border-radius: 1em;
     width: 175px;
     height: 50px;

@@ -8,13 +8,14 @@ import {createEpicMiddleware} from 'redux-observable'
 import {rootEpic} from './epics'
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 
-const epicMiddleware = createEpicMiddleware(rootEpic)
+const epicMiddleware = createEpicMiddleware()
 
 const store = createStore(reducer,
     composeWithDevTools( 
         applyMiddleware(epicMiddleware)
     )
 )
+epicMiddleware.run(rootEpic)
 ReactDOM.render(
 <Provider store={store}>
 <App />
