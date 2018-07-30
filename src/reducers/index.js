@@ -30,6 +30,8 @@ export function progressReducer(state = PROGRESSION.ENTER, action){
         return PROGRESSION.RESULT
         case ACTION_TYPE.RESET:
         return PROGRESSION.ENTER
+        case ACTION_TYPE.ERROR:
+        return PROGRESSION.FAIL
         default:
         return state
     }
@@ -39,6 +41,7 @@ export const PROGRESSION = {
     ENTER:'E',
     LOADING:'L',
     RESULT:'R',
+    FAIL:'F'
 }
 
 export default combineReducers({userReducer,progressReducer})

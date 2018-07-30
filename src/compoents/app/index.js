@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux'
 import Password from '../password'
 import Result from '../result'
+import Failure from '../failure'
 import {PROGRESSION} from '../../reducers'
 import Header from '../header'
 import Footer from '../footer'
@@ -25,6 +26,8 @@ function progressContent(progress){
     return <Loading />
     case PROGRESSION.RESULT:
     return <Result />
+    case PROGRESSION.FAIL:
+    return <Failure />
     default:
     return <Password />
   }

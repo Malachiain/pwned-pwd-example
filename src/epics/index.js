@@ -1,8 +1,8 @@
 import { of } from 'rxjs'
 import { ajax } from 'rxjs/ajax'
-import { map, switchMap } from 'rxjs/operators';
+import { map, switchMap, catchError } from 'rxjs/operators';
 import { combineEpics, ofType } from 'redux-observable'
-import { ACTION_TYPE, updateHash, updateStatus } from '../actions'
+import { ACTION_TYPE, updateHash, updateStatus, requestError } from '../actions'
 const sha1 = require('sha1');
 
 function computeHashEpic(action$) {
@@ -34,7 +34,8 @@ function checkPasswordsEpic(action$) {
                         return updateStatus('All good, your password does not apear on the pwned password dataset')
                     }
 
-                })
+                }),
+                catchError(error => of(requestError()))
             )
         })
     )

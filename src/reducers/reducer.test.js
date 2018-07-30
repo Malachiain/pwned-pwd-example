@@ -16,6 +16,10 @@ describe('progress reducer',()=>{
         expect(progressReducer(undefined,{type:ACTION_TYPE.RESET}))
         .toEqual(PROGRESSION.ENTER)
     })  
+    it('Should set the progression to failure if there is an Error', ()=>{
+        expect(progressReducer(undefined,{type:ACTION_TYPE.ERROR}))
+        .toEqual(PROGRESSION.FAIL)
+    })  
 })
 
 describe('user reducer', ()=>{

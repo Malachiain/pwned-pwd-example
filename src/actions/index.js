@@ -4,6 +4,7 @@ export const ACTION_TYPE = {
     UPDATE_STATUS:'UPDATE_STATUS',
     CHECK_STATUS:'CHECK_STATUS',
     RESET:'SET_ENTER',
+    ERROR: 'ERROR'
 }
 
 
@@ -39,5 +40,11 @@ export function checkStatus(password){
 export function reset(){
     return {
         type: ACTION_TYPE.RESET
+    }
+}
+
+export function requestError(){
+    return {
+        type: ACTION_TYPE.ERROR
     }
 }
