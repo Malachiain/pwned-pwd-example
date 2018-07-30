@@ -29,7 +29,7 @@ function checkPasswordsEpic(action$) {
                     const hashOfHashes = parseResponse(e.response)
                     const comprimisedCount = hashOfHashes[action.hash.substring(5).toUpperCase()]
                     if (comprimisedCount) {
-                        return updateStatus(`Oh no your password appears ${numberWithCommas(comprimisedCount)} times in the pwned password dataset. Probably time to change you password`)
+                        return updateStatus(`Oh no! Your password appears ${numberWithCommas(comprimisedCount)} times in the pwned password dataset. Probably time to change your password`)
                     } else {
                         return updateStatus('All good, your password does not apear on the pwned password dataset')
                     }

@@ -20,7 +20,7 @@ export function Password({ password, updatePassword, checkStatus}){
             <P>
             Enter a password that you want to check. The password will not be recorded. Only the first 5 characters of the sha1 hash
             of your password will be sent to the API. Trusting people on the internet is a dangerous game, 
-            so it is problably not a good idea to a enter a real password you use.
+            so it is problably not a good idea to a enter a real password that you use.
             </P>
         </DivColumn>
         </Content>
