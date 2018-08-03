@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {DivColumn, Content, P, Label} from '../shared'
 import Anchor from '../anchor'
+import {Colours} from '../shared'
+
 
 
 
@@ -14,7 +16,7 @@ flex-direction:column;
 const Border = styled.div`
 min-height:30px;
 
-background-color:chartreuse;
+background-color:${Colours.backgroundPrimary};
 `
 
 export default function(){

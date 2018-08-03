@@ -1,5 +1,14 @@
 import styled from 'styled-components'
 
+export const Colours = {
+    backgroundPrimary: "#2ab241",
+    backgroundSecondary: "whitesmoke",
+    link: "hotpink",
+    text: "black",
+    heading: "black"
+
+}
+
 export const DivColumn = styled.div`
 display: flex;
 flex-direction: column;
@@ -44,11 +53,11 @@ padding: 10px;
 margin:5px;
 `
 export const Button = styled.button`
-    background-color: chartreuse;
+    background-color: ${Colours.backgroundPrimary};
     border-radius: 1em;
     width: 175px;
     height: 50px;
-    color: whitesmoke;
+    color: ${Colours.backgroundSecondary};
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight:bold;
     font-size: 1em;

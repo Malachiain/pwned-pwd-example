@@ -1,8 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Colours} from '../shared'
 
 const Anc = styled.a`
-color: hotpink;
+color: ${Colours.link};
+&:hover {
+    color: lightblue;
+} 
+&:active {
+    color: darkpink;
+}
 `
 
 export default function({href, content}){
