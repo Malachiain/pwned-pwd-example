@@ -25,9 +25,9 @@ export default function(){
             <Content>
                 <DivColumn>
                     <P>This website uses a tool built by <Anchor href="https://troyhunt.com" content="Troy Hunt"/>. 
-                    It callse the pwned passwords v2 API which references a data 
+                    It calls the pwned passwords v2 API which references a data 
                     set of 500 million passwords that have been disclosed in data breaches. Troy collects the breaches and makes them
-                    avalible at <Anchor content="have I been pwned" href="https://haveibeenpwned.com/" /> Go check out if you have been
+                    avalible at <Anchor content="have I been pwned" href="https://haveibeenpwned.com/" />. Go find out if you have been
                     in a data breach</P>
                 </DivColumn>
                 <DivColumn>
