@@ -2,8 +2,8 @@
 
 exports[`The main app It renders the main page correctly 1`] = `
 <div>
-  <Component />
+  <_default />
   <Connect(Password) />
-  <Component />
+  <_default />
 </div>
 `;

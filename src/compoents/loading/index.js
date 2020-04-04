@@ -1,6 +1,5 @@
 import React from 'react'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import faCoffee from '@fortawesome/fontawesome-free-solid/faSpinner'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import styled from 'styled-components' 
 import {Colours} from '../shared'
 
@@ -13,7 +12,7 @@ color: ${Colours.backgroundPrimary};
 
 const Loading = () => (
     <Wrapper>
-        <FontAwesomeIcon icon={faCoffee} size="10x"  spin/>
+        <FontAwesomeIcon icon="spinner" size="10x"  spin/>
     </Wrapper>
 )
  
